@@ -1,0 +1,112 @@
+/* === GLOBAL HERO STYLES === */
+/* Скидання стандартних відступів браузера */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: #4f4f4f;
+    background: linear-gradient(90deg, rgba(79, 79, 79, 1) 0%, rgba(51, 51, 51, 1) 52%, rgba(33, 33, 33, 1) 100%);
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #4f4f4f;
+    background: linear-gradient(90deg, rgba(79, 79, 79, 1) 0%, rgba(51, 51, 51, 1) 52%, rgba(33, 33, 33, 1) 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    overflow: hidden;
+}
+
+/* LEFT TEXT BLOCK */
+.hero-content {
+    z-index: 5;
+    max-width: 550px;
+    margin-left: 120px;
+}
+
+.hero-sub {
+    letter-spacing: 4px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.hero-title {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+.highlight {
+    color: #c9a86a; /* GOLD ACCENT */
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 35px;
+    border-radius: 40px;
+    background: #c9a86a;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.hero-btn:hover {
+    background: #e1c28c;
+}
+
+/* RIGHT PHOTO */
+.hero-image img {
+    height: 75vh;
+    object-fit: contain;
+    filter: drop-shadow(0 0 20px rgba(0,0,0,0.6));
+}
+
+/* === FLOATING SHAPES === */
+.shape {
+    position: absolute;
+    width: 130px;
+    opacity: 0.25;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Positioning shapes like BONFIRE */
+.s1 { top: 15%; right: 33%; }
+.s2 { top: 65%; right: 10%; width: 90px; }
+.s3 { top: 40%; right: 50%; width: 70px; }
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* === MOBILE ADAPTATION === */
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+        height: auto;
+    }
+
+    .hero-image img {
+        margin-top: 40px;
+        height: 45vh;
+    }
+
+    .shape { display: none; }
+}
