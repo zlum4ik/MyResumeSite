@@ -11,10 +11,13 @@
     <!-- Твої стилі -->
     <link rel="stylesheet" href="{% static 'navigate.css' %}">
     <link rel="stylesheet" href="{% static 'banner.css' %}">
+    <link rel="stylesheet" href="{% static 'about_me.css' %}">
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
 <!-- Header  start-->
@@ -220,14 +223,37 @@
         <img src="{% static 'images/me.png' %}" alt="my photo">
     </div>
 
-    <!-- 3D FLOATING SHAPES -->
     <img src="{% static 'images/shape1.png' %}" class="shape s1">
     <img src="{% static 'images/shape2.png' %}" class="shape s2">
     <img src="{% static 'images/shape3.png' %}" class="shape s3">
 </section>
 
 <!-- Banner end -->
+<!-- ABOUT ME start -->
+<section class="about-section">
+    <div class="about-card">
+        <h2 class="about-title">Про мене</h2>
 
+        <p class="about-text">
+            Привіт! Мене звати Владислав Зарва. Я працюю у сфері
+            <strong>L2 Support</strong>, займаюся автоматизацією процесів,
+            пишу скрипти, будую пайплайни та оптимізую бізнес-логіку.
+        </p>
 
+        <p class="about-text">
+            Маю досвід з <strong>Python, SQL, Airflow, Linux, Oracle</strong>,
+            створюю Telegram-ботів та люблю проєкти з автоматизації.
+        </p>
+
+        <ul class="about-list">
+            <li>🔸 2+ років у L2 Support & automation</li>
+            <li>🔸 Створюю зручні інструменти для аналітиків</li>
+            <li>🔸 Пишу боти, автопроцеси та парсери</li>
+            <li>🔸 Фокус на якості та чистому коді</li>
+        </ul>
+    </div>
+</section>
+<!-- ABOUT ME end -->
+<script src="{% static 'scroll_effect.js' %}"></script>
 </body>
 </html>
