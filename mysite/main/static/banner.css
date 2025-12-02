@@ -117,3 +117,18 @@ html, body {
 
     .shape { display: none; }
 }
+
+
+
+/* Стиль кнопок на мої учотки*/
+.icons-row {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icons-row img {
+  width: 32px;
+  height: 32px;
+}
